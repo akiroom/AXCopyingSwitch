@@ -12,9 +12,9 @@ Example1
     NSLog(@"Default.");
   } keyAndBlocks:
     @"test", ^{
-      
+      NSLog(@"test");
     }, @"test2", ^{
-      
+      NSLog(@"test2");
     }, nil] performByKey:key];
 ```
 
