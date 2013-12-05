@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7557074C1850756500395841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7557074B1850756500395841 /* Foundation.framework */; };
+		7557074E1850756500395841 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7557074D1850756500395841 /* CoreGraphics.framework */; };
+		755707501850756500395841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7557074F1850756500395841 /* UIKit.framework */; };
+		755707561850756500395841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 755707541850756500395841 /* InfoPlist.strings */; };
+		755707581850756500395841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 755707571850756500395841 /* main.m */; };
+		7557075C1850756500395841 /* AXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7557075B1850756500395841 /* AXAppDelegate.m */; };
+		7557076B1850756500395841 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7557076A1850756500395841 /* XCTest.framework */; };
+		7557076C1850756500395841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7557074B1850756500395841 /* Foundation.framework */; };
+		7557076D1850756500395841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7557074F1850756500395841 /* UIKit.framework */; };
+		755707751850756500395841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 755707731850756500395841 /* InfoPlist.strings */; };
+		755707771850756500395841 /* AXCopyingSwitchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 755707761850756500395841 /* AXCopyingSwitchDemoTests.m */; };
+		F53BF32A5A59480EBC9FCBE0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 433765C7678B4F2BA80E6644 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7557076E1850756500395841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 755707401850756500395841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 755707471850756500395841;
+			remoteInfo = AXCopyingSwitchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		433765C7678B4F2BA80E6644 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C1A17CE5C44419BFB4361D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		755707481850756500395841 /* AXCopyingSwitchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXCopyingSwitchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7557074B1850756500395841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7557074D1850756500395841 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7557074F1850756500395841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		755707531850756500395841 /* AXCopyingSwitchDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AXCopyingSwitchDemo-Info.plist"; sourceTree = "<group>"; };
+		755707551850756500395841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		755707571850756500395841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		755707591850756500395841 /* AXCopyingSwitchDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AXCopyingSwitchDemo-Prefix.pch"; sourceTree = "<group>"; };
+		7557075A1850756500395841 /* AXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXAppDelegate.h; sourceTree = "<group>"; };
+		7557075B1850756500395841 /* AXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXAppDelegate.m; sourceTree = "<group>"; };
+		755707691850756500395841 /* AXCopyingSwitchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXCopyingSwitchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7557076A1850756500395841 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		755707721850756500395841 /* AXCopyingSwitchDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AXCopyingSwitchDemoTests-Info.plist"; sourceTree = "<group>"; };
+		755707741850756500395841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		755707761850756500395841 /* AXCopyingSwitchDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXCopyingSwitchDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		755707451850756500395841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7557074E1850756500395841 /* CoreGraphics.framework in Frameworks */,
+				755707501850756500395841 /* UIKit.framework in Frameworks */,
+				7557074C1850756500395841 /* Foundation.framework in Frameworks */,
+				F53BF32A5A59480EBC9FCBE0 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755707661850756500395841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7557076B1850756500395841 /* XCTest.framework in Frameworks */,
+				7557076D1850756500395841 /* UIKit.framework in Frameworks */,
+				7557076C1850756500395841 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7557073F1850756500395841 = {
+			isa = PBXGroup;
+			children = (
+				755707511850756500395841 /* AXCopyingSwitchDemo */,
+				755707701850756500395841 /* AXCopyingSwitchDemoTests */,
+				7557074A1850756500395841 /* Frameworks */,
+				755707491850756500395841 /* Products */,
+				53C1A17CE5C44419BFB4361D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		755707491850756500395841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				755707481850756500395841 /* AXCopyingSwitchDemo.app */,
+				755707691850756500395841 /* AXCopyingSwitchDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7557074A1850756500395841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7557074B1850756500395841 /* Foundation.framework */,
+				7557074D1850756500395841 /* CoreGraphics.framework */,
+				7557074F1850756500395841 /* UIKit.framework */,
+				7557076A1850756500395841 /* XCTest.framework */,
+				433765C7678B4F2BA80E6644 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		755707511850756500395841 /* AXCopyingSwitchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7557075A1850756500395841 /* AXAppDelegate.h */,
+				7557075B1850756500395841 /* AXAppDelegate.m */,
+				755707521850756500395841 /* Supporting Files */,
+			);
+			path = AXCopyingSwitchDemo;
+			sourceTree = "<group>";
+		};
+		755707521850756500395841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				755707531850756500395841 /* AXCopyingSwitchDemo-Info.plist */,
+				755707541850756500395841 /* InfoPlist.strings */,
+				755707571850756500395841 /* main.m */,
+				755707591850756500395841 /* AXCopyingSwitchDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		755707701850756500395841 /* AXCopyingSwitchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				755707761850756500395841 /* AXCopyingSwitchDemoTests.m */,
+				755707711850756500395841 /* Supporting Files */,
+			);
+			path = AXCopyingSwitchDemoTests;
+			sourceTree = "<group>";
+		};
+		755707711850756500395841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				755707721850756500395841 /* AXCopyingSwitchDemoTests-Info.plist */,
+				755707731850756500395841 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		755707471850756500395841 /* AXCopyingSwitchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7557077A1850756500395841 /* Build configuration list for PBXNativeTarget "AXCopyingSwitchDemo" */;
+			buildPhases = (
+				303EC6873BA247BBAFA4AC72 /* Check Pods Manifest.lock */,
+				755707441850756500395841 /* Sources */,
+				755707451850756500395841 /* Frameworks */,
+				755707461850756500395841 /* Resources */,
+				AE1919BE4C3A4C178E478DB2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AXCopyingSwitchDemo;
+			productName = AXCopyingSwitchDemo;
+			productReference = 755707481850756500395841 /* AXCopyingSwitchDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		755707681850756500395841 /* AXCopyingSwitchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7557077D1850756500395841 /* Build configuration list for PBXNativeTarget "AXCopyingSwitchDemoTests" */;
+			buildPhases = (
+				755707651850756500395841 /* Sources */,
+				755707661850756500395841 /* Frameworks */,
+				755707671850756500395841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7557076F1850756500395841 /* PBXTargetDependency */,
+			);
+			name = AXCopyingSwitchDemoTests;
+			productName = AXCopyingSwitchDemoTests;
+			productReference = 755707691850756500395841 /* AXCopyingSwitchDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		755707401850756500395841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AX;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = akiroom;
+				TargetAttributes = {
+					755707681850756500395841 = {
+						TestTargetID = 755707471850756500395841;
+					};
+				};
+			};
+			buildConfigurationList = 755707431850756500395841 /* Build configuration list for PBXProject "AXCopyingSwitchDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7557073F1850756500395841;
+			productRefGroup = 755707491850756500395841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				755707471850756500395841 /* AXCopyingSwitchDemo */,
+				755707681850756500395841 /* AXCopyingSwitchDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		755707461850756500395841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755707561850756500395841 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755707671850756500395841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755707751850756500395841 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		303EC6873BA247BBAFA4AC72 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE1919BE4C3A4C178E478DB2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		755707441850756500395841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755707581850756500395841 /* main.m in Sources */,
+				7557075C1850756500395841 /* AXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		755707651850756500395841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755707771850756500395841 /* AXCopyingSwitchDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7557076F1850756500395841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 755707471850756500395841 /* AXCopyingSwitchDemo */;
+			targetProxy = 7557076E1850756500395841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		755707541850756500395841 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				755707551850756500395841 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		755707731850756500395841 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				755707741850756500395841 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		755707781850756500395841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		755707791850756500395841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7557077B1850756500395841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C1A17CE5C44419BFB4361D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXCopyingSwitchDemo/AXCopyingSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "AXCopyingSwitchDemo/AXCopyingSwitchDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7557077C1850756500395841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C1A17CE5C44419BFB4361D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXCopyingSwitchDemo/AXCopyingSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "AXCopyingSwitchDemo/AXCopyingSwitchDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7557077E1850756500395841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AXCopyingSwitchDemo.app/AXCopyingSwitchDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXCopyingSwitchDemo/AXCopyingSwitchDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AXCopyingSwitchDemoTests/AXCopyingSwitchDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7557077F1850756500395841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AXCopyingSwitchDemo.app/AXCopyingSwitchDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXCopyingSwitchDemo/AXCopyingSwitchDemo-Prefix.pch";
+				INFOPLIST_FILE = "AXCopyingSwitchDemoTests/AXCopyingSwitchDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		755707431850756500395841 /* Build configuration list for PBXProject "AXCopyingSwitchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				755707781850756500395841 /* Debug */,
+				755707791850756500395841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7557077A1850756500395841 /* Build configuration list for PBXNativeTarget "AXCopyingSwitchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7557077B1850756500395841 /* Debug */,
+				7557077C1850756500395841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7557077D1850756500395841 /* Build configuration list for PBXNativeTarget "AXCopyingSwitchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7557077E1850756500395841 /* Debug */,
+				7557077F1850756500395841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 755707401850756500395841 /* Project object */;
+}

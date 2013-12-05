@@ -1,0 +1,14 @@
+PODS:
+  - AXCopyingSwitch (0.1)
+
+DEPENDENCIES:
+  - AXCopyingSwitch (from `..`)
+
+EXTERNAL SOURCES:
+  AXCopyingSwitch:
+    :path: ..
+
+SPEC CHECKSUMS:
+  AXCopyingSwitch: 5852c482e527d2951953023c9849e79d05aa1b6e
+
+COCOAPODS: 0.28.0
