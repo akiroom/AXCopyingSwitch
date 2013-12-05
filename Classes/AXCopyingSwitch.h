@@ -15,5 +15,7 @@
            keyAndBlocks:(id)keyAndBlocks, ... NS_REQUIRES_NIL_TERMINATION;
 - (id)initWithDefault:(void(^)(id<NSCopying> key))defaultBlock
          keyAndBlocks:(id)keyAndBlocks, ... NS_REQUIRES_NIL_TERMINATION;
+- (id)initWithDefault:(void(^)(id<NSCopying> key))defaultBlock keyAndBlockLists:(va_list)keyAndBlockLists
+             firstKey:(id)firstKey;
 - (void)performByKey:(id<NSCopying>)key;
 @end
