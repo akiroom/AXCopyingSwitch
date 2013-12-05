@@ -12,14 +12,14 @@
 {
   // Generate sample keys(NSString).
   NSMutableArray *sampleKeys = [NSMutableArray array];
-  for (int i = 1; i < 30; i++) {
+  for (int i = 1; i <= 30; i++) {
     NSString *key = [NSString stringWithFormat:@"test%d", rand() % i];
     [sampleKeys addObject:key];
   }
   
   // Instantiate switch object.
   AXCopyingSwitch *copyingSwtich =
-  [[AXCopyingSwitch alloc] initWithDefault:^(NSString *key){
+  [AXCopyingSwitch switchWithDefault:^(NSString *key){
     NSLog(@"Default: Key is %@", key);
     
   } keyAndBlocks:

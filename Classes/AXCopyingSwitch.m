@@ -13,10 +13,23 @@
 
 + (id)switchWithDefault:(void(^)(id<NSCopying> key))defaultBlock keyAndBlocks:(id)keyAndBlocks, ...
 {
-  return [[self alloc] initWithDefault:defaultBlock keyAndBlocks:keyAndBlocks, nil];
+  va_list vl;
+  va_start(vl, keyAndBlocks);
+  id result = [[[self alloc] initWithDefault:defaultBlock keyAndBlockLists:vl firstKey:keyAndBlocks] autorelease];
+  va_end(vl);
+  return result;
 }
 
 - (id)initWithDefault:(void(^)(id<NSCopying> key))defaultBlock keyAndBlocks:(id)keyAndBlocks, ...
+{
+  va_list vl;
+  va_start(vl, keyAndBlocks);
+  id result = [[self initWithDefault:defaultBlock keyAndBlockLists:vl firstKey:keyAndBlocks] autorelease];
+  va_end(vl);
+  return result;
+}
+
+- (id)initWithDefault:(void(^)(id<NSCopying> key))defaultBlock keyAndBlockLists:(va_list)keyAndBlockLists firstKey:(id)firstKey
 {
   if (self = [super init]) {
     _defaultBlock = [defaultBlock copy];
@@ -24,12 +37,9 @@
     NSMutableArray *keys = [NSMutableArray array];
     NSMutableArray *blocks = [NSMutableArray array];
     id arg;
-    id<NSCopying> key;
+    id<NSCopying> key = nil;
     
-    va_list arguments;
-    va_start(arguments, keyAndBlocks);
-    arg = keyAndBlocks;
-    
+    arg = firstKey;
     while (arg) {
       if (key) {
         [blocks addObject:arg];
@@ -38,13 +48,19 @@
         [keys addObject:arg];
         key = arg;
       }
-      arg = va_arg(arguments, typeof(NSString*));
+      arg = va_arg(keyAndBlockLists, typeof(id<NSCopying>));
     }
     _keys = keys;
     _blocks = blocks;
-    va_end(arguments);
   }
   return self;
+}
+
+- (void)dealloc
+{
+  [super dealloc];
+  [_keys release];
+  [_blocks release];
 }
 
 - (void)performByKey:(id<NSCopying>)key
