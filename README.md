@@ -35,10 +35,10 @@ Example2
     NSLog(@"Default: Key is %@", key);
     
   } keyAndBlocks:
-   @"test1", ^(){
+   @"test1", ^{
      NSLog(@"test1 is comming.");
      
-   }, @"test2", ^(){
+   }, @"test2", ^{
      NSLog(@"test2 is comming.");
      
    }, nil];
